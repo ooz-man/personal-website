@@ -12,7 +12,8 @@ export default function Footer() {
           <a href="https://x.com/ooz1006" target="_blank" rel="noopener noreferrer" className="text-[#8A9BB0] text-sm hover:text-[#1E90FF] transition-colors duration-200">X</a>
         </div>
         <p className="text-[#8A9BB0] text-xs text-center md:text-right">
-          © 2025 CMR Group · Built with Next.js
+          © 2021 CMR Group. All rights reserved.
+          This website and its content are affiliated with or endorsed by Usman Hamzat, Founder of CMR Group. The information provided constitute an official representation of CMR Group's views, products(pre/post-launch), or services.
         </p>
       </div>
     </footer>
