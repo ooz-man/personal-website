@@ -1,156 +1,156 @@
-const products = [
-  {
-    name: "CMR Hospitality Suite",
-    status: "In Development",
-    description:
-      "An AI-powered hospitality operations platform for hotels and accommodation providers. Covers reservations, guest management, staff administration, analytics, and operational automation.",
-  },
-  {
-    name: "CMR Legal Suite",
-    status: "Planned",
-    description:
-      "A digital operations platform for law firms and legal practices. Includes case management, document workflows, scheduling, billing support, and AI-assisted productivity.",
-  },
-  {
-    name: "CMR Commerce Suite",
-    status: "Planned",
-    description:
-      "A business operations and commerce platform for retailers and growing businesses. Covers inventory, sales, customer management, order processing, and analytics.",
-  },
-  {
-    name: "CMR Intelligence Platform",
-    status: "Research Phase",
-    description:
-      "An AI-powered intelligence and decision-support platform for security agencies and institutions requiring advanced monitoring, OSINT integration, risk analysis, and operational awareness.",
-  },
-];
+<p className="text-[#8A9BB0] leading-8 max-w-3xl text-lg">
+  CMR Group is a research-driven technology company building intelligent
+  digital infrastructure for businesses, institutions, and governments.
+  We combine software engineering, artificial intelligence, automation,
+  criminology, and security research to create scalable multi-tenant
+  platforms that improve operational efficiency, decision-making, and
+  organizational resilience.
+</p>
 
-const statusColor: Record<string, string> = {
-  "In Development": "#1E90FF",
-  Planned: "#4A90A4",
-  "Research Phase": "#8A9BB0",
-};
+Who We Are
+CMR Group was founded on the belief that the future belongs to organizations
+powered by intelligent systems rather than disconnected software.
 
-export default function CMRGroup() {
-  return (
-    <main className="min-h-screen bg-[#0A1628] text-[#F0F4F8] px-8 py-20 md:px-20">
-      <div className="max-w-5xl mx-auto space-y-20">
+Our work sits at the intersection of technology, intelligence,
+criminology, automation, and digital infrastructure.
 
-        {/* Header */}
-        <div className="space-y-4">
-          <p className="text-[#8A9BB0] text-sm uppercase tracking-[0.2em]">
-            The Company
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-            CMR Group
-          </h1>
-          <div className="h-px w-16 bg-[#1E90FF]" />
-          <p className="text-[#8A9BB0] leading-relaxed max-w-2xl">
-            A technology and intelligence-driven company building AI-powered
-            digital infrastructure, intelligent operational platforms, and
-            automation systems for businesses, institutions, and public-sector
-            organizations.
-          </p>
-        </div>
+Rather than building isolated applications, we develop integrated
+platforms capable of serving thousands of organizations through secure,
+multi-tenant cloud architecture.
 
-        {/* Mission & Vision */}
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="border border-[#1E3A5F] p-8 space-y-3">
-            <p className="text-[#1E90FF] text-sm uppercase tracking-widest font-medium">
-              Mission
-            </p>
-            <p className="text-[#8A9BB0] leading-relaxed">
-              To design and build intelligent technology that modernizes
-              operations, empowers better decision-making, and delivers
-              measurable value through software, automation, and AI.
-            </p>
-          </div>
-          <div className="border border-[#1E3A5F] p-8 space-y-3">
-            <p className="text-[#1E90FF] text-sm uppercase tracking-widest font-medium">
-              Vision
-            </p>
-            <p className="text-[#8A9BB0] leading-relaxed">
-              To become one of Africa&apos;s leading builders of AI-powered
-              digital infrastructure and intelligent enterprise technology
-              platforms.
-            </p>
-          </div>
-        </div>
+To engineer intelligent digital infrastructure that enables
+organizations to automate operations, strengthen decision-making,
+improve security, and deliver better services through scalable software
+and applied artificial intelligence.
 
-        {/* Core Areas */}
-        <div className="space-y-6">
-          <p className="text-[#1E90FF] text-sm uppercase tracking-widest font-medium">
-            Core Areas
-          </p>
-          <div className="flex flex-wrap gap-3">
-            {[
-              "AI Infrastructure",
-              "Digital Infrastructure",
-              "Business Automation",
-              "Operational Platforms",
-              "Enterprise Software",
-              "Data & Analytics",
-              "Intelligence Systems",
-              "Research & Innovation",
-            ].map((area) => (
-              <span
-                key={area}
-                className="border border-[#1E3A5F] text-[#8A9BB0] text-sm px-4 py-2"
-              >
-                {area}
-              </span>
-            ))}
-          </div>
-        </div>
+To become Africa's leading intelligence and technology company,
+building the operating systems that power businesses, institutions,
+public-sector organizations, and future smart cities.
 
-        {/* Products */}
-        <div className="space-y-6">
-          <p className="text-[#1E90FF] text-sm uppercase tracking-widest font-medium">
-            Product Portfolio
-          </p>
-          <div className="grid md:grid-cols-2 gap-6">
-            {products.map((product) => (
-              <div
-                key={product.name}
-                className="border border-[#1E3A5F] p-8 space-y-4"
-              >
-                <div className="flex items-start justify-between gap-4">
-                  <h3 className="text-[#F0F4F8] font-semibold">
-                    {product.name}
-                  </h3>
-                  <span
-                    className="text-xs px-2 py-1 border whitespace-nowrap"
-                    style={{
-                      color: statusColor[product.status],
-                      borderColor: statusColor[product.status],
-                    }}
-                  >
-                    {product.status}
-                  </span>
-                </div>
-                <p className="text-[#8A9BB0] text-sm leading-relaxed">
-                  {product.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
+const pillars = [
+{
+title:"Technology",
+description:"Modern cloud software and enterprise platforms."
+},
+{
+title:"Artificial Intelligence",
+description:"AI agents, intelligent automation and decision support."
+},
+{
+title:"Criminology Research",
+description:"Applying criminological thinking to risk, behaviour, justice and security."
+},
+{
+title:"Security",
+description:"Cybersecurity, operational resilience and intelligence systems."
+},
+{
+title:"Research",
+description:"Long-term applied research that becomes commercial products."
+},
+{
+title:"Infrastructure",
+description:"Scalable multi-tenant platforms powering multiple industries."
+},
+]
 
-        {/* Philosophy */}
-        <div className="border-t border-[#1E3A5F] pt-12 space-y-3">
-          <p className="text-[#1E90FF] text-sm uppercase tracking-widest font-medium">
-            Philosophy
-          </p>
-          <p className="text-[#8A9BB0] leading-relaxed max-w-2xl">
-            CMR Group is not a collection of disconnected software products. It
-            is an ecosystem of intelligent platforms built on shared engineering
-            principles, reusable infrastructure, AI capabilities, and scalable
-            architecture — designed to solve real operational problems across
-            multiple industries.
-          </p>
-        </div>
+Every CMR platform is designed using a shared multi-tenant architecture.
 
-      </div>
-    </main>
-  );
-}
+One platform.
+
+Multiple organizations.
+
+Independent data.
+
+Shared infrastructure.
+
+Infinite scalability.
+
+CMR Cloud
+
+     │
+
+──────────────
+
+Hotel A
+
+Hotel B
+
+Hospital
+
+Law Firm
+
+University
+
+Government Agency
+
+Retail Chain
+
+All running independently
+from one secure platform.
+
+Research is central to CMR Group.
+
+We continuously investigate emerging technologies,
+criminology, security, artificial intelligence,
+automation, behavioural systems, and digital governance.
+
+Our research directly informs the platforms we build,
+ensuring every product is grounded in practical,
+real-world challenges.
+
+Enterprise Platforms
+
+• Hospitality Suite
+• Legal Suite
+• Commerce Suite
+
+Intelligence Platforms
+
+• Intelligence Platform
+
+Future Labs
+
+• Healthcare Suite
+• Education Suite
+• Government Suite
+• Agriculture Suite
+
+Cloud Native
+
+API First
+
+Multi Tenant
+
+AI Ready
+
+Secure by Design
+
+Privacy Focused
+
+Modular Architecture
+
+Scalable Infrastructure
+
+CMR Group exists to build the digital infrastructure of tomorrow.
+
+We believe software should do more than automate tasks—it should augment
+human intelligence, simplify complex operations, and help organizations
+make better decisions.
+
+Every platform we develop is designed with longevity, security,
+scalability, and intelligence at its core.
+
+Our objective isn't simply to build applications.
+
+It's to build ecosystems that power industries.
+
+Our ambition extends beyond software.
+
+We envision CMR Group becoming an innovation ecosystem
+where research, engineering, artificial intelligence,
+security, and criminology converge to solve some of
+Africa's most important operational and societal challenges.
+
+The platforms we build today are the foundation for
+the intelligent infrastructure of tomorrow.
