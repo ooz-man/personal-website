@@ -1,77 +1,148 @@
 export default function About() {
   return (
     <main className="min-h-screen bg-[#0A1628] text-[#F0F4F8] px-8 py-20 md:px-20">
-      <div className="max-w-3xl mx-auto space-y-16">
+      <div className="max-w-4xl mx-auto">
 
-        {/* Header */}
-        <div className="space-y-4">
-          <p className="text-[#8A9BB0] text-sm uppercase tracking-[0.2em]">
+        {/* Hero */}
+        <section className="mb-24">
+          <p className="text-[#1E90FF] uppercase tracking-[0.25em] text-sm font-medium">
             About
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-            Usman Hamzat
+
+          <h1 className="mt-4 text-5xl md:text-6xl font-bold leading-tight">
+            Building the future through
+            <span className="text-[#1E90FF]"> intelligent systems.</span>
           </h1>
-          <div className="h-px w-16 bg-[#1E90FF]" />
-        </div>
 
-        {/* Background */}
-        <section className="space-y-3">
-          <p className="text-[#1E90FF] text-sm uppercase tracking-widest font-medium">
-            Background
-          </p>
-          <p className="text-[#8A9BB0] leading-relaxed">
-            I&apos;m a Nigerian technology founder and builder with an academic
-            background in Criminology and Security Studies. My interests sit at
-            the intersection of technology, intelligence, automation, and
-            real-world problem solving — with a strong focus on developing
-            practical digital solutions that create measurable impact.
+          <div className="mt-8 h-px w-20 bg-[#1E90FF]" />
+
+          <p className="mt-10 text-lg leading-9 text-[#A7B6C8] max-w-3xl">
+            I'm <span className="text-white font-semibold">Usman Hamzat</span>,
+            founder of <span className="text-white">CMR Group</span> — a
+            technology company focused on building intelligent software,
+            automation platforms, and digital infrastructure that help
+            organizations operate more efficiently, make better decisions, and
+            scale with confidence.
           </p>
         </section>
 
-        {/* What Drives Me */}
-        <section className="space-y-3">
-          <p className="text-[#1E90FF] text-sm uppercase tracking-widest font-medium">
-            What Drives Me
-          </p>
-          <p className="text-[#8A9BB0] leading-relaxed">
-            I founded CMR Group with a long-term vision of building AI-powered
-            digital infrastructure and intelligent operational platforms that
-            help businesses, institutions, and public-sector organizations work
-            more efficiently and make better decisions.
-          </p>
-          <p className="text-[#8A9BB0] leading-relaxed">
-            My goal is not just to build software — but to build systems that
-            solve meaningful problems and contribute to Africa&apos;s
-            technological growth through innovation, research, and practical
-            execution.
-          </p>
+        {/* Story */}
+        <section className="grid md:grid-cols-[220px_1fr] gap-12 py-16 border-t border-[#18283E]">
+          <div>
+            <p className="uppercase tracking-[0.18em] text-sm text-[#1E90FF]">
+              My Story
+            </p>
+          </div>
+
+          <div className="space-y-6 text-[#8A9BB0] leading-8">
+            <p>
+              My academic background in Criminology and Security Studies shaped
+              how I approach technology. Rather than seeing software as isolated
+              applications, I see systems—how information flows, how decisions
+              are made, and how organizations can become more intelligent
+              through better processes.
+            </p>
+
+            <p>
+              That mindset naturally evolved into building software. Today, I
+              design digital products that combine modern engineering,
+              automation, artificial intelligence, and data to solve practical
+              operational challenges across businesses and institutions.
+            </p>
+          </div>
         </section>
 
-        {/* What I Do */}
-        <section className="space-y-3">
-          <p className="text-[#1E90FF] text-sm uppercase tracking-widest font-medium">
-            What I Do
-          </p>
-          <p className="text-[#8A9BB0] leading-relaxed">
-            I work as a founder, software developer, and technology researcher
-            with a strong interest in AI, automation, systems design,
-            intelligence technologies, and scalable digital infrastructure. I
-            build products that combine software engineering with data,
-            analytics, and intelligent decision-support capabilities.
-          </p>
+        {/* Vision */}
+        <section className="grid md:grid-cols-[220px_1fr] gap-12 py-16 border-t border-[#18283E]">
+          <div>
+            <p className="uppercase tracking-[0.18em] text-sm text-[#1E90FF]">
+              Vision
+            </p>
+          </div>
+
+          <div className="space-y-6 text-[#8A9BB0] leading-8">
+            <p>
+              Through CMR Group, my long-term mission is to develop intelligent
+              operational platforms that enable businesses, government
+              institutions, and organizations across Africa to modernize their
+              operations through automation, analytics, and AI-driven decision
+              support.
+            </p>
+
+            <p>
+              I believe Africa's next generation of growth will be powered not
+              only by software, but by intelligent infrastructure that improves
+              productivity, transparency, and operational excellence.
+            </p>
+          </div>
         </section>
 
-        {/* Personal Note */}
-        <section className="space-y-3">
-          <p className="text-[#1E90FF] text-sm uppercase tracking-widest font-medium">
-            Beyond Technology
-          </p>
-          <p className="text-[#8A9BB0] leading-relaxed">
-            I&apos;m constantly learning, researching, and exploring new ideas
-            that can be transformed into practical products. I enjoy thinking in
-            systems, documenting ideas, and building projects that have
-            long-term value rather than chasing short-term trends.
-          </p>
+        {/* Expertise */}
+        <section className="grid md:grid-cols-[220px_1fr] gap-12 py-16 border-t border-[#18283E]">
+          <div>
+            <p className="uppercase tracking-[0.18em] text-sm text-[#1E90FF]">
+              Focus Areas
+            </p>
+          </div>
+
+          <div>
+
+            <div className="grid sm:grid-cols-2 gap-5">
+
+              {[
+                "Artificial Intelligence",
+                "Workflow Automation",
+                "Software Engineering",
+                "System Architecture",
+                "Business Intelligence",
+                "Digital Infrastructure",
+                "Operational Platforms",
+                "Technology Research"
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="border border-[#1B2C42] rounded-xl px-5 py-4 bg-[#0F1D31]/40 hover:border-[#1E90FF] transition-colors"
+                >
+                  <p className="text-[#F0F4F8]">{item}</p>
+                </div>
+              ))}
+
+            </div>
+
+          </div>
+        </section>
+
+        {/* Philosophy */}
+        <section className="grid md:grid-cols-[220px_1fr] gap-12 py-16 border-t border-b border-[#18283E]">
+          <div>
+            <p className="uppercase tracking-[0.18em] text-sm text-[#1E90FF]">
+              Philosophy
+            </p>
+          </div>
+
+          <div className="space-y-6 text-[#8A9BB0] leading-8">
+
+            <p>
+              I'm driven by curiosity, continuous learning, and the belief that
+              technology should solve real problems—not simply showcase
+              technical complexity.
+            </p>
+
+            <p>
+              Every product I build begins with a simple question:
+            </p>
+
+            <blockquote className="border-l-2 border-[#1E90FF] pl-6 italic text-white text-xl">
+              "How can this make someone's work simpler, smarter, and more
+              effective?"
+            </blockquote>
+
+            <p>
+              That's the principle behind every project I pursue and the
+              direction that continues to shape the future of CMR Group.
+            </p>
+
+          </div>
         </section>
 
       </div>
