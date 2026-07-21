@@ -1,135 +1,182 @@
-const focus = [
-  "AI Research & Experimentation",
-  "Software Engineering",
-  "Open-Source Projects",
-  "Internal Frameworks",
-  "Prototype Development",
-  "Product Innovation",
-  "Technical Documentation",
+type ResearchDomain = {
+  title: string;
+  description: string;
+};
+
+type EngineeringDivision = {
+  title: string;
+  description: string;
+};
+
+type Initiative = {
+  name: string;
+  status: "Live" | "In Development" | "Research" | "Prototype";
+  description: string;
+  technologies: string[];
+};
+
+const researchDomains: ResearchDomain[] = [
+  {
+    title: "Artificial Intelligence",
+    description:
+      "Applied AI, intelligent agents, retrieval systems, LLM integration, automation, and decision-support technologies.",
+  },
+  {
+    title: "Software Engineering",
+    description:
+      "Scalable enterprise software, cloud-native applications, distributed systems, and reusable platforms.",
+  },
+  {
+    title: "Criminology Research",
+    description:
+      "Applying criminological theory to intelligence analysis, public safety, behavioural systems, and digital investigations.",
+  },
+  {
+    title: "Cybersecurity & Intelligence",
+    description:
+      "Threat intelligence, operational security, OSINT, risk analysis, and secure digital infrastructure.",
+  },
+  {
+    title: "Automation",
+    description:
+      "Business process automation, AI workflows, API orchestration, and operational efficiency.",
+  },
+  {
+    title: "Digital Infrastructure",
+    description:
+      "Shared cloud architecture, authentication, storage, analytics, notifications, and platform services.",
+  },
 ];
 
-const projects = [
+const engineeringDivisions: EngineeringDivision[] = [
   {
-    name: "CMRTrendBot",
+    title: "AI Engineering",
+    description: "Building intelligent systems powered by modern AI models.",
+  },
+  {
+    title: "Platform Engineering",
+    description: "Shared infrastructure powering every CMR product.",
+  },
+  {
+    title: "Backend Engineering",
+    description: "Fast, scalable APIs and distributed services.",
+  },
+  {
+    title: "Frontend Engineering",
+    description: "Modern interfaces focused on usability and performance.",
+  },
+  {
+    title: "Infrastructure Engineering",
+    description: "Cloud deployment, monitoring, networking, and scalability.",
+  },
+  {
+    title: "Security Engineering",
+    description: "Security-first architecture, RBAC, authentication, and resilience.",
+  },
+];
+
+const initiatives: Initiative[] = [
+  {
+    name: "CMR Hospitality Suite",
     status: "In Development",
     description:
-      "A Telegram bot for the StillTrending trending content, and AI-powered summaries to subscribers via Telegram.",
-    stack: ["Python", "FastAPI", "PostgreSQL", "Claude AI", "Telegram Bot API"],
+      "A multi-tenant hospitality operating platform combining reservations, AI concierge, CRM, analytics, payments, and operational management.",
+    technologies: [
+      "Next.js",
+      "FastAPI",
+      "PostgreSQL",
+      "TypeScript",
+      "Claude AI",
+    ],
+  },
+  {
+    name: "CMR Intelligence Platform",
+    status: "Research",
+    description:
+      "An intelligence and decision-support platform integrating OSINT, NLP, behavioural analysis, and risk scoring.",
+    technologies: [
+      "Python",
+      "FastAPI",
+      "Telethon",
+      "PostgreSQL",
+      "Machine Learning",
+    ],
   },
   {
     name: "CMR Verification Bot",
     status: "Live",
     description:
-      "A production Telegram onboarding and verification bot with multi-step flows, math captcha, admin commands, and a dark-themed admin dashboard.",
-    stack: ["Python", "FastAPI", "PostgreSQL", "Render"],
+      "Production Telegram verification platform with onboarding automation and administration tools.",
+    technologies: [
+      "Python",
+      "Telegram Bot API",
+      "FastAPI",
+      "PostgreSQL",
+    ],
   },
   {
-    name: "Parkview Hotel Abuja — Website",
-    status: "Completed",
+    name: "CMRTrendBot",
+    status: "Prototype",
     description:
-      "A full hotel website with booking form, AI concierge chat widget, room tiers, event halls, and amenities showcase — built as a single-page application.",
-    stack: ["HTML", "CSS", "JavaScript", "Anthropic API"],
-  },
-  {
-    name: "CMR Intelligence Platform",
-    status: "Research Phase",
-    description:
-      "An AI-powered intelligence and decision-support system. Currently in research and architecture design, focusing on OSINT integration, NLP processing, and risk scoring for the Nigerian and West African context.",
-    stack: ["Python", "Telethon", "NLP", "PostgreSQL"],
+      "AI-powered trend discovery, summarisation, and content intelligence delivered through Telegram.",
+    technologies: [
+      "Python",
+      "Claude",
+      "FastAPI",
+      "Telegram",
+    ],
   },
 ];
 
-const statusColor: Record<string, string> = {
-  Live: "#00C896",
-  "In Development": "#1E90FF",
-  Completed: "#4A90A4",
-  "Research Phase": "#8A9BB0",
-};
+const engineeringPrinciples = [
+  "Cloud Native",
+  "API First",
+  "Multi-Tenant",
+  "AI Native",
+  "Secure by Design",
+  "Privacy First",
+  "Modular Architecture",
+  "Documentation First",
+  "Testing Culture",
+  "Continuous Delivery",
+];
 
-export default function CMRLabs() {
-  return (
-    <main className="min-h-screen bg-[#0A1628] text-[#F0F4F8] px-8 py-20 md:px-20">
-      <div className="max-w-5xl mx-auto space-y-20">
+<section className="space-y-8">
 
-        {/* Header */}
-        <div className="space-y-4">
-          <p className="text-[#8A9BB0] text-sm uppercase tracking-[0.2em]">
-            Research & Engineering
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-            CMR Labs
-          </h1>
-          <div className="h-px w-16 bg-[#1E90FF]" />
-          <p className="text-[#8A9BB0] leading-relaxed max-w-2xl">
-            The research and engineering arm of CMR Group. CMR Labs serves as
-            the company&apos;s innovation laboratory — responsible for
-            experimentation, prototype development, open-source initiatives, AI
-            exploration, and the creation of core technologies that power future
-            CMR products.
-          </p>
-        </div>
+<p className="uppercase tracking-[0.25em] text-[#1E90FF] text-sm">
+Engineering & Applied Research
+</p>
 
-        {/* Focus Areas */}
-        <div className="space-y-6">
-          <p className="text-[#1E90FF] text-sm uppercase tracking-widest font-medium">
-            Focus Areas
-          </p>
-          <div className="flex flex-wrap gap-3">
-            {focus.map((area) => (
-              <span
-                key={area}
-                className="border border-[#1E3A5F] text-[#8A9BB0] text-sm px-4 py-2"
-              >
-                {area}
-              </span>
-            ))}
-          </div>
-        </div>
+<h1 className="text-6xl font-bold">
+CMR Labs
+</h1>
 
-        {/* Projects */}
-        <div className="space-y-6">
-          <p className="text-[#1E90FF] text-sm uppercase tracking-widest font-medium">
-            Projects
-          </p>
-          <div className="grid md:grid-cols-2 gap-6">
-            {projects.map((project) => (
-              <div
-                key={project.name}
-                className="border border-[#1E3A5F] p-8 space-y-4"
-              >
-                <div className="flex items-start justify-between gap-4">
-                  <h3 className="text-[#F0F4F8] font-semibold">
-                    {project.name}
-                  </h3>
-                  <span
-                    className="text-xs px-2 py-1 border whitespace-nowrap"
-                    style={{
-                      color: statusColor[project.status],
-                      borderColor: statusColor[project.status],
-                    }}
-                  >
-                    {project.status}
-                  </span>
-                </div>
-                <p className="text-[#8A9BB0] text-sm leading-relaxed">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 pt-2">
-                  {project.stack.map((tech) => (
-                    <span
-                      key={tech}
-                      className="text-xs text-[#4A90A4] bg-[#0F2040] px-2 py-1"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+<p className="max-w-3xl text-lg leading-8 text-[#8A9BB0]">
+CMR Labs is the engineering, artificial intelligence, and applied
+research laboratory of CMR Group.
 
-      </div>
-    </main>
-  );
-}
+We research, design, prototype, and engineer intelligent software,
+automation platforms, and digital infrastructure that power the next
+generation of CMR products.
+</p>
+
+</section>
+
+<section>
+
+<h2>Looking Ahead</h2>
+
+<p>
+CMR Labs exists to bridge research and engineering.
+
+Our ambition is to become one of Africa's leading applied research
+laboratories—where artificial intelligence, software engineering,
+criminology, cybersecurity, and digital infrastructure converge to solve
+real operational challenges.
+
+Every technology we develop contributes to the long-term vision of CMR
+Group: building intelligent infrastructure for the industries of
+tomorrow.
+</p>
+
+</section>
