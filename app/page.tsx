@@ -89,8 +89,8 @@ const researchAreas: string[] = [
 const engineeringPrinciples: string[] = [
   "Security by default",
   "Config over duplication",
-  "Ship production, not demos",
-  "Design for African market constraints",
+  "Ship production, not prototypes",
+  "Design for Nigerian market constraints",
   "Observable systems",
   "Iterate from real usage",
 ];
@@ -349,9 +349,7 @@ export default function HomePage() {
             <span>Automation</span>
             <span>Digital Infrastructure</span>
           </div>
-          <p className="text-[#8A9BB0] text-sm">
-            Built with Next.js &amp; TypeScript.
-          </p>
+         
         </div>
       </footer>
     </main>

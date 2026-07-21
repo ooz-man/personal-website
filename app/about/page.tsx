@@ -5,25 +5,35 @@ export default function About() {
 
         {/* Hero */}
         <section className="mb-24">
-          <p className="text-[#1E90FF] uppercase tracking-[0.25em] text-sm font-medium">
-            About
-          </p>
+          <div className="flex items-start justify-between">
+            <div className="flex-1">
+              <p className="text-[#1E90FF] uppercase tracking-[0.25em] text-sm font-medium">
+                About
+              </p>
 
-          <h1 className="mt-4 text-5xl md:text-6xl font-bold leading-tight">
-            Building the future through
-            <span className="text-[#1E90FF]"> intelligent systems.</span>
-          </h1>
+              <h1 className="mt-4 text-5xl md:text-6xl font-bold leading-tight">
+                Building the future through
+                <span className="text-[#1E90FF]"> intelligent systems.</span>
+              </h1>
 
-          <div className="mt-8 h-px w-20 bg-[#1E90FF]" />
+              <div className="mt-8 h-px w-20 bg-[#1E90FF]" />
 
-          <p className="mt-10 text-lg leading-9 text-[#A7B6C8] max-w-3xl">
-            I'm <span className="text-white font-semibold">Usman Hamzat</span>,
-            founder of <span className="text-white">CMR Group</span> — a
-            technology company focused on building intelligent software,
-            automation platforms, and digital infrastructure that help
-            organizations operate more efficiently, make better decisions, and
-            scale with confidence.
-          </p>
+              <p className="mt-10 text-lg leading-9 text-[#A7B6C8] max-w-3xl">
+                I'm <span className="text-white font-semibold">Usman Hamzat</span>,
+                founder of <span className="text-white">CMR Group</span> — a
+                technology company focused on building intelligent software,
+                automation platforms, and digital infrastructure that help
+                organizations operate more efficiently, make better decisions, and
+                scale with confidence.
+              </p>
+            </div>
+
+            <img
+              src="/profile.jpg"
+              alt="Usman Hamzat"
+              className="w-32 h-32 object-cover rounded-full ml-10 mt-1 flex-shrink-0"
+            />
+          </div>
         </section>
 
         {/* Story */}
@@ -64,13 +74,13 @@ export default function About() {
             <p>
               Through CMR Group, my long-term mission is to develop intelligent
               operational platforms that enable businesses, government
-              institutions, and organizations across Africa to modernize their
+              institutions, and organizations across Nigeria to modernize their
               operations through automation, analytics, and AI-driven decision
               support.
             </p>
 
             <p>
-              I believe Africa's next generation of growth will be powered not
+              I believe Nigeria's next generation of growth will be powered not
               only by software, but by intelligent infrastructure that improves
               productivity, transparency, and operational excellence.
             </p>
@@ -86,9 +96,7 @@ export default function About() {
           </div>
 
           <div>
-
             <div className="grid sm:grid-cols-2 gap-5">
-
               {[
                 "Artificial Intelligence",
                 "Workflow Automation",
@@ -106,9 +114,7 @@ export default function About() {
                   <p className="text-[#F0F4F8]">{item}</p>
                 </div>
               ))}
-
             </div>
-
           </div>
         </section>
 
@@ -121,11 +127,12 @@ export default function About() {
           </div>
 
           <div className="space-y-6 text-[#8A9BB0] leading-8">
-
             <p>
               I'm driven by curiosity, continuous learning, and the belief that
               technology should solve real problems—not simply showcase
-              technical complexity.
+              technical prowess. My work is guided by a simple principle: every
+              product I build should make someone's work simpler, smarter, and
+              more effective.
             </p>
 
             <p>
@@ -141,7 +148,6 @@ export default function About() {
               That's the principle behind every project I pursue and the
               direction that continues to shape the future of CMR Group.
             </p>
-
           </div>
         </section>
 
