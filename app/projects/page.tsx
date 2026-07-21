@@ -490,7 +490,7 @@ export default function ProjectsPage() {
               and make better decisions at every level.
             </p>
             <p>
-              Our work is designed for Africa — and built to operate beyond it.
+              Our work is designed for Nigeria — and built to operate beyond it.
             </p>
           </div>
 
