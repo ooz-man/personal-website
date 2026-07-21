@@ -53,12 +53,23 @@ export default function CMRLabs() {
 
         {/* Header */}
         <div className="space-y-4">
-          <p className="text-[#8A9BB0] text-sm uppercase tracking-[0.2em]">
-            Research & Engineering
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-            CMR Labs
-          </h1>
+          <div className="flex items-start justify-between">
+            <div className="space-y-4">
+              <p className="text-[#8A9BB0] text-sm uppercase tracking-[0.2em]">
+                Research & Engineering
+              </p>
+              <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+                CMR Labs
+              </h1>
+            </div>
+
+            <img
+              src="/cmr-labs.jpg"
+              alt="CMR Labs Logo"
+              className="w-20 h-20 object-contain"
+            />
+          </div>
+
           <div className="h-px w-16 bg-[#1E90FF]" />
           <p className="text-[#8A9BB0] leading-relaxed max-w-2xl">
             The research and engineering arm of CMR Group. CMR Labs serves as

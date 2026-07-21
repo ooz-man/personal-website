@@ -1,3 +1,4 @@
+
 const products = [
   {
     name: "CMR Hospitality Suite",
@@ -24,26 +25,37 @@ const products = [
       "An AI-powered intelligence and decision-support platform for security agencies and institutions requiring advanced monitoring, OSINT integration, risk analysis, and operational awareness.",
   },
 ];
-
+ 
 const statusColor: Record<string, string> = {
   "In Development": "#1E90FF",
   Planned: "#4A90A4",
   "Research Phase": "#8A9BB0",
 };
-
+ 
 export default function CMRGroup() {
   return (
     <main className="min-h-screen bg-[#0A1628] text-[#F0F4F8] px-8 py-20 md:px-20">
       <div className="max-w-5xl mx-auto space-y-20">
-
+ 
         {/* Header */}
         <div className="space-y-4">
-          <p className="text-[#8A9BB0] text-sm uppercase tracking-[0.2em]">
-            The Company
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-            CMR Group
-          </h1>
+          <div className="flex items-start justify-between">
+            <div className="space-y-4">
+              <p className="text-[#8A9BB0] text-sm uppercase tracking-[0.2em]">
+                The Company
+              </p>
+              <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+                CMR Group
+              </h1>
+            </div>
+ 
+            <img
+              src="/cmr-group.jpg"
+              alt="CMR Group Logo"
+              className="w-20 h-20 object-contain"
+            />
+          </div>
+ 
           <div className="h-px w-16 bg-[#1E90FF]" />
           <p className="text-[#8A9BB0] leading-relaxed max-w-2xl">
             A technology and intelligence-driven company building AI-powered
@@ -52,7 +64,7 @@ export default function CMRGroup() {
             organizations.
           </p>
         </div>
-
+ 
         {/* Mission & Vision */}
         <div className="grid md:grid-cols-2 gap-8">
           <div className="border border-[#1E3A5F] p-8 space-y-3">
@@ -76,7 +88,7 @@ export default function CMRGroup() {
             </p>
           </div>
         </div>
-
+ 
         {/* Core Areas */}
         <div className="space-y-6">
           <p className="text-[#1E90FF] text-sm uppercase tracking-widest font-medium">
@@ -102,7 +114,7 @@ export default function CMRGroup() {
             ))}
           </div>
         </div>
-
+ 
         {/* Products */}
         <div className="space-y-6">
           <p className="text-[#1E90FF] text-sm uppercase tracking-widest font-medium">
@@ -135,7 +147,7 @@ export default function CMRGroup() {
             ))}
           </div>
         </div>
-
+ 
         {/* Philosophy */}
         <div className="border-t border-[#1E3A5F] pt-12 space-y-3">
           <p className="text-[#1E90FF] text-sm uppercase tracking-widest font-medium">
@@ -149,8 +161,9 @@ export default function CMRGroup() {
             multiple industries.
           </p>
         </div>
-
+ 
       </div>
     </main>
   );
 }
+ 
