@@ -31,7 +31,7 @@ export default function About() {
             <img
               src="/profile.jpg"
               alt="Usman Hamzat"
-              className="w-32 h-32 object-cover rounded-full ml-10 mt-1 flex-shrink-0"
+              className="w-40 h-40 object-cover rounded-full ml-10 mt-1 flex-shrink-0"
             />
           </div>
         </section>
