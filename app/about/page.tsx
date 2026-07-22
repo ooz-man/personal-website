@@ -98,14 +98,14 @@ export default function About() {
           <div>
             <div className="grid sm:grid-cols-2 gap-5">
               {[
-                "Artificial Intelligence",
-                "Workflow Automation",
-                "Software Engineering",
-                "System Architecture",
                 "Business Intelligence",
                 "Digital Infrastructure",
                 "Operational Platforms",
                 "Technology Research"
+                "Artificial Intelligence",
+                "Workflow Automation",
+                "Software Engineering",
+                "System Architecture",                
               ].map((item) => (
                 <div
                   key={item}
@@ -119,7 +119,7 @@ export default function About() {
         </section>
 
         {/* Philosophy */}
-        <section className="grid md:grid-cols-[220px_1fr] gap-12 py-16 border-t border-b border-[#18283E]">
+        <section className="grid md:grid-cols-[220px_1fr] gap-12 py-16 border-t border-[#18283E]">
           <div>
             <p className="uppercase tracking-[0.18em] text-sm text-[#1E90FF]">
               Philosophy
@@ -129,8 +129,7 @@ export default function About() {
           <div className="space-y-6 text-[#8A9BB0] leading-8">
             <p>
               I'm driven by curiosity, continuous learning, and the belief that
-              technology should solve real problems—not simply showcase
-              technical prowess. My work is guided by a simple principle: every
+              technology should solve real problems. My work is guided by a simple principle: every
               product I build should make someone's work simpler, smarter, and
               more effective.
             </p>
@@ -148,6 +147,71 @@ export default function About() {
               That's the principle behind every project I pursue and the
               direction that continues to shape the future of CMR Group.
             </p>
+          </div>
+        </section>
+
+        {/* Team */}
+        <section className="grid md:grid-cols-[220px_1fr] gap-12 py-16 border-t border-b border-[#18283E]">
+          <div>
+            <p className="uppercase tracking-[0.18em] text-sm text-[#1E90FF]">
+              The Team
+            </p>
+          </div>
+
+          <div className="space-y-10">
+
+            {/* Usman */}
+            <div className="flex items-start gap-6">
+              <img
+                src="/profile.jpg"
+                alt="Usman Hamzat"
+                className="w-16 h-16 object-cover rounded-full flex-shrink-0"
+              />
+              <div className="space-y-2">
+                <div>
+                  <h3 className="text-[#F0F4F8] font-semibold text-lg">Usman Hamzat</h3>
+                  <p className="text-[#1E90FF] text-sm uppercase tracking-widest">
+                    Founder & Chief Executive
+                  </p>
+                </div>
+                <p className="text-[#8A9BB0] leading-8 text-sm">
+                  Engineer, builder, and founder of CMR Group. Background in Criminology and
+                  Security Studies. Designs and builds AI-powered digital infrastructure,
+                  intelligent operational platforms, and automation systems targeting Nigerian businesses, institutions, and public-sector organizations — with the goal of improving operational efficiency, decision-making, and scalability in Nigerian
+                  markets and beyond.
+                </p>
+              </div>
+            </div>
+
+            <div className="h-px w-full bg-[#18283E]" />
+
+            {/* Habeeba */}
+            <div className="flex items-start gap-6">
+              <img
+                src="/habeeba.jpg"
+                alt="Habeeba A. Sulayman"
+                className="w-16 h-16 object-cover rounded-full flex-shrink-0"
+              />
+              <div className="space-y-2">
+                <div>
+                  <h3 className="text-[#F0F4F8] font-semibold text-lg">
+                    Habeeba Sulayman Anuoluwapo
+                  </h3>
+                  <p className="text-[#1E90FF] text-sm uppercase tracking-widest">
+                    Policy & Research Associate — CMR Labs
+                  </p>
+                </div>
+                <p className="text-[#8A9BB0] leading-8 text-sm">
+                  A graduate of Political Studies with a strong understanding of governance,
+                  institutional behaviour, and public policy frameworks. At CMR Labs, Habeeba
+                  contributes to applied research initiatives, bridging the gap between
+                  technology and the political, regulatory, and institutional contexts in which
+                  CMR platforms operate. Her work directly informs CMR's intelligence research,
+                  public sector strategy, and the development of governance-facing products.
+                </p>
+              </div>
+            </div>
+
           </div>
         </section>
 
