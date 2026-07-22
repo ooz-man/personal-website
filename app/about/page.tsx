@@ -164,7 +164,7 @@ export default function About() {
             <div className="flex items-start gap-6">
               <img
                 src="/profile.jpg"
-                alt="Usman Hamzat"
+                alt="Usman H. OYERO"
                 className="w-16 h-16 object-cover rounded-full flex-shrink-0"
               />
               <div className="space-y-2">
@@ -189,21 +189,21 @@ export default function About() {
             <div className="flex items-start gap-6">
               <img
                 src="/habeeba.jpg"
-                alt="Habeeba A. Sulayman"
+                alt="Habeeba A. SULAYMAN"
                 className="w-16 h-16 object-cover rounded-full flex-shrink-0"
               />
               <div className="space-y-2">
                 <div>
                   <h3 className="text-[#F0F4F8] font-semibold text-lg">
-                    Habeeba Sulayman Anuoluwapo
+                    Habeeba A. Sulayman
                   </h3>
                   <p className="text-[#1E90FF] text-sm uppercase tracking-widest">
-                    Policy & Research Associate — CMR Labs
+                    Policy & Research Associate — CMR Group
                   </p>
                 </div>
                 <p className="text-[#8A9BB0] leading-8 text-sm">
                   A graduate of Political Studies with a strong understanding of governance,
-                  institutional behaviour, and public policy frameworks. At CMR Labs, Habeeba
+                  institutional behaviour, and public policy frameworks. At CMR Group, Habeeba
                   contributes to applied research initiatives, bridging the gap between
                   technology and the political, regulatory, and institutional contexts in which
                   CMR platforms operate. Her work directly informs CMR's intelligence research,
