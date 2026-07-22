@@ -98,14 +98,14 @@ export default function About() {
           <div>
             <div className="grid sm:grid-cols-2 gap-5">
               {[
+                "Artificial Intelligence",
+                "Workflow Automation",
+                "Software Engineering",
+                "System Architecture",
                 "Business Intelligence",
                 "Digital Infrastructure",
                 "Operational Platforms",
                 "Technology Research"
-                "Artificial Intelligence",
-                "Workflow Automation",
-                "Software Engineering",
-                "System Architecture",                
               ].map((item) => (
                 <div
                   key={item}
