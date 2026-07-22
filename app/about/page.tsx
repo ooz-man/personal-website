@@ -176,9 +176,7 @@ export default function About() {
                 </div>
                 <p className="text-[#8A9BB0] leading-8 text-sm">
                   Engineer, builder, and founder of CMR Group. Background in Criminology and
-                  Security Studies. Designs and builds AI-powered digital infrastructure,
-                  intelligent operational platforms, and automation systems targeting Nigerian businesses, institutions, and public-sector organizations — with the goal of improving operational efficiency, decision-making, and scalability in Nigerian
-                  markets and beyond.
+                  Security Studies.
                 </p>
               </div>
             </div>
@@ -190,15 +188,15 @@ export default function About() {
               <img
                 src="/habeeba.jpg"
                 alt="Habeeba A. Sulayman"
-                className="w-16 h-16 object-cover rounded-full flex-shrink-0"
+                className="w-32 h-32 object-cover rounded-full flex-shrink-0"
               />
               <div className="space-y-2">
                 <div>
                   <h3 className="text-[#F0F4F8] font-semibold text-lg">
-                    Habeeba Sulayman Anuoluwapo
+                    Habeeba A. Sulayman 
                   </h3>
                   <p className="text-[#1E90FF] text-sm uppercase tracking-widest">
-                    Policy & Research Associate — CMR Labs
+                    Legal, Policy & Research Associate — CMR Labs
                   </p>
                 </div>
                 <p className="text-[#8A9BB0] leading-8 text-sm">
@@ -206,7 +204,7 @@ export default function About() {
                   institutional behaviour, and public policy frameworks. At CMR Labs, Habeeba
                   contributes to applied research initiatives, bridging the gap between
                   technology and the political, regulatory, and institutional contexts in which
-                  CMR platforms operate. Her work directly informs CMR's intelligence research,
+                  CMR platforms operate. Her work directly informs CMR Group, intelligence research,
                   public sector strategy, and the development of governance-facing products.
                 </p>
               </div>
