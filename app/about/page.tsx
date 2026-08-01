@@ -177,8 +177,7 @@ export default function About() {
                 <p className="text-[#8A9BB0] leading-8 text-sm">
                   Engineer, builder, and founder of CMR Group. Background in Criminology and
                   Security Studies. Designs and builds AI-powered digital infrastructure,
-                  intelligent operational platforms, and automation systems targeting Nigerian businesses, institutions, and public-sector organizations — with the goal of improving operational efficiency, decision-making, and scalability in Nigerian
-                  markets and beyond.
+                  intelligent operational platforms, and automation systems targeting Nigerian businesses, institutions, and public-sector organizations.
                 </p>
               </div>
             </div>
