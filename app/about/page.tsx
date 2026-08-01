@@ -48,7 +48,7 @@ export default function About() {
             <p>
               My academic background in Criminology and Security Studies shaped
               how I approach technology. Rather than seeing software as isolated
-              applications, I see systems—how information flows, how decisions
+              applications, I see how information flows, how decisions
               are made, and how organizations can become more intelligent
               through better processes.
             </p>
@@ -56,8 +56,8 @@ export default function About() {
             <p>
               That mindset naturally evolved into building software. Today, I
               design digital products that combine modern engineering,
-              automation, artificial intelligence, and data to solve practical
-              operational challenges across businesses and institutions.
+              automation, AI, and data to solve practical operational
+              challenges across businesses and institutions.
             </p>
           </div>
         </section>
@@ -72,15 +72,15 @@ export default function About() {
 
           <div className="space-y-6 text-[#8A9BB0] leading-8">
             <p>
-              Through CMR Group, my long-term mission is to develop intelligent
+              Through CMR Labs, my long-term mission is to develop intelligent
               operational platforms that enable businesses, government
-              institutions, and organizations across Nigeria to modernize their
+              institutions, and organizations in Nigeria to modernize their
               operations through automation, analytics, and AI-driven decision
               support.
             </p>
 
             <p>
-              I believe Nigeria's next generation of growth will be powered not
+              I believe my country Nigeria next generation of growth will be powered not
               only by software, but by intelligent infrastructure that improves
               productivity, transparency, and operational excellence.
             </p>
