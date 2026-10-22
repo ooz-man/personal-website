@@ -1,357 +1,381 @@
-"use client";
 
-type Metric = {
-  value: string;
-  label: string;
-};
+import Image from "next/image";
+import Link from "next/link";
 
-type CardItem = {
-  title: string;
-  description?: string;
-};
-
-type Platform = {
-  name: string;
-  description: string;
-  status: "Live" | "In Development" | "Planned";
-};
-
-const metrics: Metric[] = [
-  { value: "4+", label: "Enterprise Platforms" },
-  { value: "20+", label: "Core Technologies" },
-  { value: "AI", label: "Native Architecture" },
-  { value: "∞", label: "Scalable Multi-Tenant Design" },
-];
-
-const cmrGroupPillars: CardItem[] = [
-  { title: "Technology" },
-  { title: "Artificial Intelligence" },
-  { title: "Automation" },
-  { title: "Security" },
-  { title: "Criminology" },
-  { title: "Research" },
-  { title: "Infrastructure" },
-];
-
-const labsPipeline: string[] = ["Research", "Prototype", "Engineering", "Deployment"];
-
-const technologyStack: string[] = [
-  "Next.js",
-  "FastAPI",
-  "TypeScript",
-  "Python",
-  "PostgreSQL",
-  "Docker",
-  "DigitalOcean",
-  "Claude",
-  "OpenAI",
-  "Supabase",
-];
-
-const platforms: Platform[] = [
+const ventures = [
   {
-    name: "Hospitality Suite",
+    name: "CMR Labs",
+    category: "Technology & Engineering",
     description:
-      "Multi-tenant hotel management and booking platform with AI concierge, subscription billing, and role-based access.",
-    status: "Live",
+      "An engineering initiative focused on AI automation, workflow systems, software products, and practical digital solutions.",
+    status: "Technology initiative",
+    href: "/cmr-labs",
   },
   {
-    name: "Legal Suite",
+    name: "Fruvita",
+    category: "Food & Agriculture",
     description:
-      "Case management and document automation infrastructure for legal practices, built on the same multi-tenant core.",
-    status: "In Development",
+      "A planned fruit and produce brand focused on hygienic retail, with longer-term ambitions in beverages, food products, and distribution.",
+    status: "Planned venture",
+    href: "/ventures",
   },
   {
-    name: "Commerce Suite",
+    name: "OOZII Grooming",
+    category: "Grooming & Personal Care",
     description:
-      "Configurable commerce and payments platform for African businesses, from storefront to fulfillment.",
-    status: "Planned",
+      "A grooming and personal-care business initiative focused on barbering, grooming, and beauty services.",
+    status: "Venture initiative",
+    href: "/ventures",
   },
   {
-    name: "Intelligence Platform",
+    name: "Maishago",
+    category: "Retail & Commerce",
     description:
-      "Digital intelligence and OSINT infrastructure for risk monitoring, applying applied criminology to real data pipelines.",
-    status: "In Development",
+      "A planned retail brand focused on sourced non-food products, including clothing, accessories, and footwear.",
+    status: "Planned venture",
+    href: "/ventures",
+  },
+  {
+    name: "CMR Studio",
+    category: "Knowledge & Media",
+    description:
+      "A media and educational initiative for criminology, security awareness, podcasts, and digital storytelling.",
+    status: "Content initiative",
+    href: "/insights",
   },
 ];
 
-const researchAreas: string[] = [
-  "Artificial Intelligence",
-  "Behavioural Systems",
-  "Digital Intelligence",
-  "OSINT",
-  "Cybersecurity",
-  "Criminology",
-  "Automation",
-  "Cloud Infrastructure",
+const focusAreas = [
+  "Technology & engineering",
+  "Business operations",
+  "Security & criminology",
+  "Research & education",
 ];
-
-const engineeringPrinciples: string[] = [
-  "Security by default",
-  "Config over duplication",
-  "Ship production, not prototypes",
-  "Design for Nigerian market constraints",
-  "Observable systems",
-  "Iterate from real usage",
-];
-
-const platformStatusColor: Record<Platform["status"], string> = {
-  Live: "#3FBF77",
-  "In Development": "#1E90FF",
-  Planned: "#8A9BB0",
-};
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#0A1628] text-white">
+    <main className="bg-[#F5F4F0] text-[#1A2B3B]">
       {/* Hero */}
-      <section className="max-w-6xl mx-auto px-6 pt-28 pb-24">
-        <p className="uppercase tracking-[0.2em] text-[#1E90FF] text-sm">
-          Founder &bull; AI Engineer &bull; Applied Researcher
-        </p>
-        <h1 className="text-5xl md:text-6xl font-bold mt-5 leading-tight max-w-4xl">
-          Building intelligent digital infrastructure for the next
-          generation of enterprise platforms.
-        </h1>
-        <p className="mt-6 max-w-2xl text-[#8A9BB0] leading-8 text-lg">
-          Combining artificial intelligence, software engineering,
-          automation, criminology, and security research to power
-          businesses, institutions, and governments.
-        </p>
-      </section>
+      <section className="relative overflow-hidden">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-2 lg:gap-16 lg:px-12 lg:py-24">
+          <div className="relative z-10">
+            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#1D4D68]">
+              An emerging portfolio of ventures
+            </p>
 
-      {/* Metrics */}
-      <section className="border-y border-[#1E3A5F]">
-        <div className="max-w-6xl mx-auto px-6 py-14 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {metrics.map((metric) => (
-            <div key={metric.label}>
-              <p className="text-4xl font-bold text-[#1E90FF]">
-                {metric.value}
-              </p>
-              <p className="mt-2 text-[#8A9BB0] text-sm uppercase tracking-wide">
-                {metric.label}
-              </p>
+            <h1 className="max-w-2xl text-4xl font-semibold leading-[1.12] tracking-tight sm:text-5xl lg:text-6xl">
+              Building ideas into meaningful ventures.
+            </h1>
+
+            <p className="mt-6 max-w-xl text-base leading-8 text-slate-600 sm:text-lg">
+              CMR Group is an emerging business portfolio bringing together
+              technology, enterprise solutions, services, and knowledge-driven
+              initiatives under a shared long-term vision.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                href="/ventures"
+                className="inline-flex items-center justify-center rounded-full bg-[#1D4D68] px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#14394F]"
+              >
+                Explore Our Ventures
+                <span aria-hidden="true" className="ml-2">
+                  →
+                </span>
+              </Link>
+
+              <Link
+                href="/about"
+                className="inline-flex items-center justify-center rounded-full border border-[#C8D1D7] px-7 py-3.5 text-sm font-semibold text-[#1A2B3B] transition-colors hover:border-[#1D4D68]"
+              >
+                About CMR Group
+              </Link>
             </div>
-          ))}
-        </div>
-      </section>
 
-      <div className="max-w-6xl mx-auto px-6 py-24 space-y-24">
-        {/* About */}
-        <section className="max-w-3xl">
-          <p className="uppercase tracking-[0.2em] text-[#1E90FF] text-sm">
-            About
-          </p>
-          <h2 className="text-3xl font-bold mt-3">
-            Technology should solve meaningful problems.
-          </h2>
-          <p className="mt-6 text-[#8A9BB0] leading-8">
-            My work focuses on building intelligent software, AI-powered
-            operational systems, and digital infrastructure capable of
-            serving businesses, institutions, and governments.
-          </p>
-          <p className="mt-4 text-[#8A9BB0] leading-8">
-            Everything I build is designed with security, scalability,
-            automation, and long-term maintainability in mind.
-          </p>
-        </section>
-
-        {/* CMR Group */}
-        <section className="space-y-10">
-          <div>
-            <p className="uppercase tracking-[0.2em] text-[#1E90FF] text-sm">
-              CMR Group
-            </p>
-            <h2 className="text-3xl font-bold mt-3">What We Work Across</h2>
-          </div>
-          <div className="flex flex-wrap gap-4">
-            {cmrGroupPillars.map((pillar) => (
-              <span
-                key={pillar.title}
-                className="px-5 py-3 rounded-full border border-[#1E3A5F] bg-[#10233F] text-[#A8C4E8] hover:border-[#1E90FF] transition-colors"
-              >
-                {pillar.title}
-              </span>
-            ))}
-          </div>
-        </section>
-
-        {/* CMR Labs */}
-        <section className="border border-[#1E3A5F] rounded-xl p-10 space-y-10">
-          <div>
-            <p className="uppercase tracking-[0.2em] text-[#1E90FF] text-sm">
-              CMR Labs
-            </p>
-            <h2 className="text-3xl font-bold mt-3">
-              Engineering &amp; Applied Research
-            </h2>
-            <p className="mt-4 max-w-2xl text-[#8A9BB0] leading-8">
-              Every CMR platform begins inside CMR Labs.
+            <p className="mt-6 text-xs leading-6 text-slate-500">
+              CMR Group is an emerging portfolio initiative. Individual
+              ventures and products may be at different stages of planning
+              and development.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {labsPipeline.map((step, index) => (
-              <div key={step} className="flex items-center gap-3">
-                <div className="border border-[#1E3A5F] rounded-lg p-4 text-center flex-1">
-                  <p className="text-sm font-medium">{step}</p>
-                </div>
-                {index < labsPipeline.length - 1 && (
-                  <span className="hidden md:block text-[#1E90FF]">
-                    &rarr;
-                  </span>
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
 
-        {/* Platform Portfolio */}
-        <section className="space-y-10">
-          <div>
-            <p className="uppercase tracking-[0.2em] text-[#1E90FF] text-sm">
-              Platform Portfolio
-            </p>
-            <h2 className="text-3xl font-bold mt-3">
-              The CMR Ecosystem
-            </h2>
-          </div>
-          <div className="grid lg:grid-cols-2 gap-6">
-            {platforms.map((platform) => (
-              <div
-                key={platform.name}
-                className="border border-[#1E3A5F] rounded-xl p-8 hover:border-[#1E90FF] transition-colors"
-              >
-                <div className="flex justify-between items-start gap-4">
-                  <h3 className="text-xl font-semibold">{platform.name}</h3>
-                  <span
-                    className="text-xs px-3 py-1 rounded-full border shrink-0"
-                    style={{
-                      color: platformStatusColor[platform.status],
-                      borderColor: platformStatusColor[platform.status],
-                    }}
-                  >
-                    {platform.status}
-                  </span>
-                </div>
-                <p className="mt-4 text-[#8A9BB0] leading-8">
-                  {platform.description}
+          <div className="relative">
+            <div className="absolute -inset-4 rounded-[2rem] bg-[#DCE6E8]" />
+
+            <div className="relative aspect-[5/4] overflow-hidden rounded-2xl bg-[#1A2B3B]">
+              <Image
+                src="/cmr-group.jpg"
+                alt="CMR Group portfolio"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/85 via-[#0A1628]/10 to-transparent" />
+
+              <div className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#B9DCEB]">
+                  The CMR vision
+                </p>
+                <p className="mt-3 max-w-md text-2xl font-medium leading-snug sm:text-3xl">
+                  Connecting enterprise, technology, and knowledge.
                 </p>
               </div>
-            ))}
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Research Areas */}
-        <section className="space-y-10">
+      {/* About */}
+      <section className="border-y border-[#DCE3E8] bg-white">
+        <div className="mx-auto grid max-w-7xl gap-8 px-5 py-16 sm:px-8 md:grid-cols-[0.8fr_1.2fr] md:gap-16 md:py-20 lg:px-12">
           <div>
-            <p className="uppercase tracking-[0.2em] text-[#1E90FF] text-sm">
-              Research Areas
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#1D4D68]">
+              About CMR Group
             </p>
-            <h2 className="text-3xl font-bold mt-3">
-              Where CMR Labs Focuses
+            <h2 className="mt-4 max-w-md text-3xl font-semibold leading-tight sm:text-4xl">
+              A broader vision. Distinct ventures. Shared direction.
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {researchAreas.map((area) => (
+
+          <div>
+            <p className="text-base leading-8 text-slate-600">
+              CMR Group is being developed as a parent-group concept for
+              initiatives that address practical needs across different
+              industries. The vision is to build ventures with clear purposes,
+              responsible operations, and room for sustainable growth.
+            </p>
+
+            <p className="mt-4 text-base leading-8 text-slate-600">
+              Each initiative has its own identity while sharing a commitment
+              to problem-solving, learning, responsible operations, and
+              long-term value.
+            </p>
+
+            <Link
+              href="/about"
+              className="mt-6 inline-flex items-center font-semibold text-[#1D4D68] hover:text-[#1687E8]"
+            >
+              Learn about our direction <span className="ml-2">→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Ventures */}
+      <section
+        id="ventures"
+        className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20 lg:px-12"
+      >
+        <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#1D4D68]">
+              Our portfolio
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+              Ventures &amp; initiatives
+            </h2>
+          </div>
+
+          <p className="max-w-lg text-sm leading-7 text-slate-600 sm:text-base">
+            Distinct areas of focus, with each initiative progressing
+            according to its own plans and development stage.
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {ventures.map((venture, index) => (
+            <article
+              key={venture.name}
+              className="group flex h-full flex-col rounded-2xl border border-[#DCE3E8] bg-white p-6 transition-all duration-200 hover:-translate-y-1 hover:border-[#9BB7C5] hover:shadow-lg sm:p-8"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#EAF0F2] text-sm font-semibold text-[#1D4D68]">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+
+                <span className="rounded-full bg-[#F0F2F3] px-3 py-1 text-xs font-medium text-slate-600">
+                  {venture.status}
+                </span>
+              </div>
+
+              <p className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-[#1D4D68]">
+                {venture.category}
+              </p>
+
+              <h3 className="mt-2 text-2xl font-semibold">
+                {venture.name}
+              </h3>
+
+              <p className="mt-3 flex-1 text-sm leading-7 text-slate-600">
+                {venture.description}
+              </p>
+
+              <Link
+                href={venture.href}
+                className="mt-6 inline-flex w-fit items-center text-sm font-semibold text-[#1D4D68] group-hover:text-[#1687E8]"
+              >
+                Explore initiative <span className="ml-2">→</span>
+              </Link>
+            </article>
+          ))}
+        </div>
+
+        <div className="mt-8">
+          <Link
+            href="/ventures"
+            className="inline-flex items-center font-semibold text-[#1D4D68] hover:text-[#1687E8]"
+          >
+            View the full portfolio <span className="ml-2">→</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* Featured CMR Labs project */}
+      <section className="bg-[#1A2B3B] text-white">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 sm:px-8 sm:py-20 md:grid-cols-2 lg:gap-16 lg:px-12">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A9CBDC]">
+              CMR Labs · Project in development
+            </p>
+
+            <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
+              CMR Hospitality Suite
+            </h2>
+
+            <p className="mt-5 max-w-xl leading-8 text-slate-300">
+              A hospitality management software project under CMR Labs,
+              intended to connect operational workflows such as reservations,
+              guest records, payments, housekeeping, and reporting in one
+              digital experience.
+            </p>
+
+            <p className="mt-4 text-sm leading-7 text-slate-400">
+              The project is in development. Features, deployment, and
+              availability should be confirmed before making service
+              commitments.
+            </p>
+
+            <Link
+              href="/projects"
+              className="mt-7 inline-flex items-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1A2B3B] transition-colors hover:bg-[#DCE6E8]"
+            >
+              Explore projects <span className="ml-2">→</span>
+            </Link>
+          </div>
+
+          <div className="rounded-2xl border border-white/15 bg-white/5 p-6 sm:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#A9CBDC]">
+              Intended product focus
+            </p>
+
+            <div className="mt-6 divide-y divide-white/10">
+              {[
+                ["01", "Hospitality operations"],
+                ["02", "Reservations and guest records"],
+                ["03", "Staff and housekeeping workflows"],
+                ["04", "Reporting and operational visibility"],
+              ].map(([number, label]) => (
+                <div key={number} className="flex items-center gap-4 py-4">
+                  <span className="text-sm font-semibold text-[#A9CBDC]">
+                    {number}
+                  </span>
+                  <span className="text-sm text-slate-200 sm:text-base">
+                    {label}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-4 text-xs leading-6 text-slate-400">
+              These describe the project&apos;s intended focus, not a
+              guarantee that every feature is currently available.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Group focus */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20 lg:px-12">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#1D4D68]">
+            Our areas of focus
+          </p>
+
+          <h2 className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">
+            Practical solutions, informed by different disciplines.
+          </h2>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {focusAreas.map((area) => (
               <div
                 key={area}
-                className="border border-[#1E3A5F] rounded-lg p-5 text-center hover:border-[#1E90FF] transition-colors"
+                className="rounded-xl border border-[#DCE3E8] bg-[#F8F8F5] p-5"
               >
-                <p className="text-sm font-medium">{area}</p>
+                <span className="text-sm font-medium">{area}</span>
               </div>
             ))}
           </div>
-        </section>
-
-        {/* Technology Stack */}
-        <section className="space-y-10">
-          <div>
-            <p className="uppercase tracking-[0.2em] text-[#1E90FF] text-sm">
-              Technology Focus
-            </p>
-            <h2 className="text-3xl font-bold mt-3">
-              Tools We Build With
-            </h2>
-          </div>
-          <div className="flex flex-wrap gap-3">
-            {technologyStack.map((tech) => (
-              <span
-                key={tech}
-                className="bg-[#10233F] text-[#8DB8FF] px-4 py-2 rounded-full text-sm"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        </section>
-
-        {/* Engineering Philosophy */}
-        <section className="space-y-10">
-          <div>
-            <p className="uppercase tracking-[0.2em] text-[#1E90FF] text-sm">
-              Engineering Philosophy
-            </p>
-            <h2 className="text-3xl font-bold mt-3">How We Build</h2>
-          </div>
-          <div className="flex flex-wrap gap-4">
-            {engineeringPrinciples.map((principle) => (
-              <span
-                key={principle}
-                className="px-5 py-3 rounded-full border border-[#1E3A5F] bg-[#10233F] text-[#A8C4E8] hover:border-[#1E90FF] transition-colors"
-              >
-                {principle}
-              </span>
-            ))}
-          </div>
-        </section>
-
-        {/* Quote */}
-        <section className="border-t border-[#1E3A5F] pt-16">
-          <blockquote className="max-w-3xl mx-auto text-center border-l-2 border-[#1E90FF] pl-8 md:pl-0 md:border-l-0 space-y-4">
-            <p className="text-2xl font-semibold leading-relaxed">
-              Software should do more than automate tasks.
-            </p>
-            <p className="text-[#8A9BB0] leading-8">
-              It should augment human intelligence, strengthen
-              decision-making, and become the infrastructure that powers
-              industries.
-            </p>
-          </blockquote>
-        </section>
-
-        {/* Contact CTA */}
-        <section className="border border-[#1E3A5F] rounded-xl p-12 text-center space-y-6">
-          <h2 className="text-3xl font-bold">
-            Building Something Ambitious?
-          </h2>
-          <p className="max-w-2xl mx-auto text-[#8A9BB0] leading-8">
-            Whether you&apos;re modernizing operations, developing an
-            AI-powered platform, or exploring intelligent automation, I&apos;d
-            be glad to discuss how CMR Group can help.
-          </p>
-          <button className="mt-4 px-8 py-3 rounded-full bg-[#1E90FF] text-[#0A1628] font-semibold hover:bg-[#4DA6FF] transition-colors">
-            Start a Conversation
-          </button>
-        </section>
-      </div>
-
-      {/* Footer */}
-      <footer className="border-t border-[#1E3A5F]">
-        <div className="max-w-6xl mx-auto px-6 py-12 space-y-6">
-          <p className="text-sm uppercase tracking-[0.25em] text-[#1E90FF]">
-            CMR Group
-          </p>
-          <div className="flex flex-wrap gap-x-6 gap-y-2 text-[#8A9BB0] text-sm">
-            <span>Technology</span>
-            <span>Artificial Intelligence</span>
-            <span>Research</span>
-            <span>Security</span>
-            <span>Automation</span>
-            <span>Digital Infrastructure</span>
-          </div>
-         
         </div>
-      </footer>
+      </section>
+
+      {/* Insights */}
+      <section
+        id="insights"
+        className="mx-auto grid max-w-7xl gap-8 px-5 py-16 sm:px-8 sm:py-20 md:grid-cols-2 md:items-center lg:px-12"
+      >
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#1D4D68]">
+            Ideas &amp; insights
+          </p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+            Learning that informs what we build.
+          </h2>
+        </div>
+
+        <div>
+          <p className="leading-8 text-slate-600">
+            Educational content, research interests, and practical commentary
+            connect technology with real-world questions in security,
+            criminology, business operations, governance, and society.
+          </p>
+
+          <Link
+            href="/insights"
+            className="mt-6 inline-flex items-center font-semibold text-[#1D4D68] hover:text-[#1687E8]"
+          >
+            Explore insights <span className="ml-2">→</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* Contact CTA */}
+      <section className="px-5 pb-16 sm:px-8 sm:pb-20 lg:px-12">
+        <div className="mx-auto max-w-7xl overflow-hidden rounded-2xl bg-[#E5ECEE] px-6 py-12 sm:px-10 sm:py-16 lg:px-14">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#1D4D68]">
+              Get in touch
+            </p>
+
+            <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
+              Have a question, idea, or potential collaboration?
+            </h2>
+
+            <p className="mt-4 max-w-2xl leading-8 text-slate-600">
+              Start a conversation about CMR Group, its initiatives, or a
+              potential opportunity to work together.
+            </p>
+
+            <Link
+              href="/contact"
+              className="mt-7 inline-flex items-center rounded-full bg-[#1D4D68] px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#14394F]"
+            >
+              Contact CMR Group <span className="ml-2">→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
