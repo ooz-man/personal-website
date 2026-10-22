@@ -172,16 +172,18 @@ export default function About() {
             </div>
 
             <p>
-              CMR Group is the longer-term portfolio vision behind these
-              interests. CMR Labs provides the engineering direction, while
-              other brands explore different needs in retail, grooming, food,
-              media, and education.
+              My academic background in Criminology and Security Studies shaped
+              how I approach technology. Rather than seeing software as isolated
+              applications, I see how information flows, how decisions
+              are made, and how organizations can become more intelligent
+              through better processes.
             </p>
 
             <p>
-              The objective is to develop each initiative deliberately, learn
-              from implementation, and establish the operational foundations
-              required for sustainable growth.
+              That mindset naturally evolved into building software. Today, I
+              design digital products that combine modern engineering,
+              automation, AI, and data to solve practical operational
+              challenges across businesses and institutions.
             </p>
           </div>
         </section>
@@ -193,14 +195,19 @@ export default function About() {
               Our Team
             </p>
 
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-              The people behind the vision
-            </h2>
+          <div className="space-y-6 text-[#8A9BB0] leading-8">
+            <p>
+              Through CMR Labs, my long-term mission is to develop intelligent
+              operational platforms that enable businesses, government
+              institutions, and organizations in Nigeria to modernize their
+              operations through automation, analytics, and AI-driven decision
+              support.
+            </p>
 
-            <p className="mt-5 leading-8 text-[#526477]">
-              CMR Group brings together complementary perspectives across
-              technology, governance, policy, research, and enterprise
-              development.
+            <p>
+              I believe my country Nigeria next generation of growth will be powered not
+              only by software, but by intelligent infrastructure that improves
+              productivity, transparency, and operational excellence.
             </p>
           </div>
 
@@ -382,8 +389,24 @@ export default function About() {
               >
                 <h3 className="text-lg font-bold">{principle.title}</h3>
 
-                <p className="mt-3 text-sm leading-7 text-[#617184]">
-                  {principle.description}
+            {/* Usman */}
+            <div className="flex items-start gap-6">
+              <img
+                src="/profile.jpg"
+                alt="Usman H. OYERO"
+                className="w-16 h-16 object-cover rounded-full flex-shrink-0"
+              />
+              <div className="space-y-2">
+                <div>
+                  <h3 className="text-[#F0F4F8] font-semibold text-lg">Usman Hamzat</h3>
+                  <p className="text-[#1E90FF] text-sm uppercase tracking-widest">
+                    Founder & Chief Executive
+                  </p>
+                </div>
+                <p className="text-[#8A9BB0] leading-8 text-sm">
+                  Engineer, builder, and founder of CMR Group. Background in Criminology and
+                  Security Studies. Designs and builds AI-powered digital infrastructure,
+                  intelligent operational platforms, and automation systems targeting Nigerian businesses, institutions, and public-sector organizations.
                 </p>
               </article>
             ))}
@@ -397,25 +420,32 @@ export default function About() {
               Our Philosophy
             </p>
 
-            <blockquote className="mt-6 text-2xl font-semibold leading-relaxed tracking-tight sm:text-3xl md:text-4xl">
-              “Build things that solve real problems, strengthen capability,
-              and create lasting value.”
-            </blockquote>
-
-            <p className="mx-auto mt-6 max-w-2xl leading-8 text-[#617184]">
-              Every initiative should have a clear purpose, a realistic path
-              forward, and a commitment to learning from the people and
-              environments it serves.
-            </p>
-          </div>
-        </section>
-
-        {/* Contact CTA */}
-        <section className="flex flex-col gap-6 bg-[#1A2B3B] p-8 text-white sm:p-10 md:flex-row md:items-center md:justify-between">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#C5A36A]">
-              Start a Conversation
-            </p>
+            {/* Habeeba */}
+            <div className="flex items-start gap-6">
+              <img
+                src="/habeeba.jpg"
+                alt="Habeeba A. SULAYMAN"
+                className="w-16 h-16 object-cover rounded-full flex-shrink-0"
+              />
+              <div className="space-y-2">
+                <div>
+                  <h3 className="text-[#F0F4F8] font-semibold text-lg">
+                    Habeeba A. Sulayman
+                  </h3>
+                  <p className="text-[#1E90FF] text-sm uppercase tracking-widest">
+                    Policy & Research Associate — CMR Group
+                  </p>
+                </div>
+                <p className="text-[#8A9BB0] leading-8 text-sm">
+                  A graduate of Political Studies with a strong understanding of governance,
+                  institutional behaviour, and public policy frameworks. At CMR Group, Habeeba
+                  contributes to applied research initiatives, bridging the gap between
+                  technology and the political, regulatory, and institutional contexts in which
+                  CMR platforms operate. Her work directly informs CMR's intelligence research,
+                  public sector strategy, and the development of governance-facing products.
+                </p>
+              </div>
+            </div>
 
             <h2 className="mt-3 text-2xl font-bold sm:text-3xl">
               Interested in what we are building?
