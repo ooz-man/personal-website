@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Usman Hamzat, OYERO about CMR Group, business ventures, technology projects, research collaborations, and strategic initiatives.",
+    "Contact Usman about CMR Group, business ventures, technology projects, research collaborations, and strategic initiatives.",
 };
 const contacts = [
   {
@@ -14,16 +14,28 @@ const contacts = [
     description: "For business inquiries and collaboration",
   },
   {
+    label: "LinkedIn",
+    value: "linkedin.com/in/oozman100698",
+    href: "https://www.linkedin.com/in/oozman100698",
+    description: "Connect with Usman professionally",
+  },
+  {
     label: "GitHub",
     value: "github.com/ooz-man",
     href: "https://github.com/ooz-man",
-    description: "Explore software and engineering projects",
+    description: "Explore Usman personal software and engineering projects",
+  },
+  {
+  label: "Instagram",
+  value: "@c_m_r_group",
+  href: "https://www.instagram.com/c_m_r_group/",
+  description: "Follow CMR Group updates and activities",
   },
   {
     label: "X (Twitter)",
-    value: "@ooz1006",
-    href: "https://x.com/ooz1006",
-    description: "Follow updates and professional interests",
+    value: "@SafariOozi",
+    href: "https://x.com/SafariOozi",
+    description: "Follow Usman updates and professional interests",
   },
   {
     label: "WhatsApp",
