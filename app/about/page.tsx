@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about Usman Hamzat, OYERO, the vision behind the emerging CMR Group portfolio, its team, and its strategic direction.",
+    "Learn about Usman H. OYERO, the vision behind the emerging CMR Group portfolio, its team, and its strategic direction.",
 };
 
 const principles = [
@@ -146,7 +146,7 @@ export default function About() {
             <div className="flex flex-col items-start gap-6 sm:flex-row">
               <Image
                 src="/profile.jpg"
-                alt="Usman Hamzat Oyero"
+                alt="Usman H. OYERO"
                 width={112}
                 height={112}
                 className="h-24 w-24 rounded-full border-2 border-white object-cover shadow-sm"
@@ -154,7 +154,7 @@ export default function About() {
 
               <div>
                 <h3 className="text-xl font-semibold text-[#1A2B3B]">
-                  Usman Hamzat Oyero
+                  Usman H. OYERO
                 </h3>
 
                 <p className="mt-1 text-sm font-medium text-[#1D4D68]">
@@ -210,7 +210,7 @@ export default function About() {
               <div className="flex items-start gap-5">
                 <Image
                   src="/profile.jpg"
-                  alt="Usman Hamzat Oyero"
+                  alt="Usman H. OYERO"
                   width={96}
                   height={96}
                   className="h-20 w-20 shrink-0 rounded-full object-cover"
@@ -218,7 +218,7 @@ export default function About() {
 
                 <div>
                   <h3 className="text-lg font-bold text-[#1A2B3B]">
-                    Usman Hamzat Oyero
+                    Usman H. OYERO
                   </h3>
 
                   <p className="mt-1 text-sm font-medium text-[#1D4D68]">
@@ -226,7 +226,7 @@ export default function About() {
                   </p>
 
                   <p className="mt-2 text-xs text-[#718096]">
-                    Criminology & Security Studies
+                    BSc. in Criminology & Security 
                   </p>
                 </div>
               </div>
@@ -281,6 +281,39 @@ export default function About() {
                 contributes research and analytical perspectives that inform
                 business development, technology initiatives, intelligence
                 research, and educational projects across CMR Group.
+              </p>
+            </article>
+
+            {/* Fawas */}
+            <article className="border border-[#DCE3E8] bg-white p-6 sm:p-8">
+              <div className="flex items-start gap-5">
+                <Image
+                  src="/fawaz.jpg"
+                  alt="Fawas N. Adesilola"
+                  width={96}
+                  height={96}
+                  className="h-20 w-20 shrink-0 rounded-full object-cover"
+                />
+
+                <div>
+                  <h3 className="text-lg font-bold text-[#1A2B3B]">
+                    Fawas N. Adesilola
+                  </h3>
+
+                  <p className="mt-1 text-sm font-medium leading-6 text-[#1D4D68]">
+                    IT &amp; Digital Systems Associate — CMR Group
+                  </p>
+
+                  <p className="mt-2 text-xs text-[#718096]">
+                    Information Technology Student, Federal University of Agriculture, Abeokuta (FUNAAB)
+                  </p>
+                </div>
+              </div>
+
+              <p className="mt-6 text-sm leading-7 text-[#526477]">
+                Fawas brings an academic foundation in Information Technology
+                to CMR Group&apos;s focus on digital systems, technology
+                development, and operational innovation.
               </p>
             </article>
           </div>
