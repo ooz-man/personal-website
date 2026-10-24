@@ -17,14 +17,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Usman Hamzat, OYERO | CMR Group",
+    default: "Usman H. OYERO | CMR Group",
     template: "%s | CMR Group",
   },
   description:
-    "The professional portfolio of Usman Hamzat Oyero, showcasing CMR Group's emerging ventures, technology projects, research, and strategic initiatives.",
+    "The professional portfolio of Usman H. OYERO, showcasing CMR Group's emerging ventures, technology projects, research, and strategic initiatives.",
   applicationName: "CMR Group Portfolio",
   openGraph: {
-    title: "Usman Hamzat, OYERO | CMR Group",
+    title: "Usman H. OYERO | CMR Group",
     description:
       "Explore the emerging CMR portfolio, CMR Labs engineering projects, research, and business initiatives.",
     type: "website",

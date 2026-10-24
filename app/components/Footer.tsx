@@ -53,29 +53,12 @@ export default function Footer() {
           </h2>
 
           <a
-            href="mailto:suthmanh@gmail.com"
+            href="mailto:cmrgroupltd@gmail.com"
             className="block w-fit text-sm text-slate-300 transition-colors hover:text-[#42A5FF]"
           >
-            suthmanh@gmail.com
+            cmrgroupltd@gmail.com
           </a>
 
-          <a
-            href="https://github.com/ooz-man"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-fit text-sm text-slate-300 transition-colors hover:text-[#42A5FF]"
-          >
-            GitHub ↗
-          </a>
-
-          <a
-            href="https://x.com/ooz1006"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-fit text-sm text-slate-300 transition-colors hover:text-[#42A5FF]"
-          >
-            X ↗
-          </a>
         </div>
       </div>
 
